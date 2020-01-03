@@ -11,10 +11,10 @@ HELOC credit flag denotes whether the loan is risky or not. This risk flag is gi
 Details of challenge can be found here: https://community.fico.com/s/explainable-machine-learning-challenge
 
 ## Keynotes
-## Engineering new feature
+### Engineering new feature
 Even though not provided, new feature "percentage of satisfactory trades" is provided as a new feature by calculating number of satisfactory trades and number of total trades.
 
-## Feature Selection
+### Feature Selection
 Roughly 10 features will be selected based on three standards:
 
 (1) Model-free feature selection
@@ -28,7 +28,7 @@ Permutation Feature Importance
 Highly correlated features will not be included. (Only few will be selected)
 Feature with too many outliers may lead a misleading result. Therefore these features may be filtered out.
 
-## Model
+### Model
 Goal of this project is to achieve a high prediction accuracy and interpretable model at the same time. Therefore, both white-box models and black-box models will be used and provide various interpretations according to the results of fitted models. For white-box models, visualization and model-diagnostic methods wil be discussed. For black-box models, model agnostic post hoc methods such as VI, PDP, ICE, and SHAP will be used.
 
 White-box model includes: GAM
